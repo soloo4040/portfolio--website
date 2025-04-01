@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="https://i.pinimg.com/736x/c0/39/4b/c0394b72e5a6bc6ea14c2737b9f91944.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><i class="fas fa-times" onclick="closemenu()"></i></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    
+                    </ul>  
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                    
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I am <span>NGENO KIPKIRUI SOLOMON</span><br>from Kenya and I'm a Software Developer.</h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/user.jpg">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>As a Software Developer, graphic designer, UI/UX designer and a web developer, 
+                               I am a highly skilled and experienced professional with a passion for using technology 
+                               to solve real world problems.</p>
+
+                             <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                             </div>
+                             
+                             <div class="tab-contents active-tab" id="Skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web Application Interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>Graphics Designer</span><br>Designing posters, banners etc</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Experience">
+                                <ul>
+                                    <li><span>2025</span><br>Final Year Project</li>
+                                    <li><span>September 2024- December 2024</span><br>UI/UX</li>
+                                    <li><span>May 2023 - August 2023</span><br>Industrial training at Nairobi City County, IT office </li>
+                                    <li><span>October 2022- April 2023</span><br>Web Development</li>
+                                    <li><span> May 2022- August 2022</span><br>Industrial training at Tenwek Hospital</li>
+                                    <li><span>February 2022- April 2022 </span><br>Graphics Design course</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>2025</span><br> Year 4 Bsc Software Engineering Kirinyaga University </li>
+                                    <li><span>2021</span><br>Form 4 Chepalungu Boys High School</li>
+                                    <li><span>2016</span><br>class 8 Tilangok Primary</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------services-------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I am dedicated to building user friendly web applications</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Creating friendly user interfacesc and designs</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-file-svg"></i>
+                        <h2>Graphic Design</h2>
+                        <p>building posters, banners and everything that has to do with Graphics</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!---------------portfolio-------------->
+<div id="portflio">
+    <div class="portfolio">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Social Media Post</h3>
+                    <p>The post connects you to people around the world</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Online Shopping Application Post</h3>
+                    <p>The application connects you to purchases globally</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>User Interface Design</h3>
+                    <p>Enhances User Interface User friendly Design</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See More</a>
+    </div>
+</div>
+<!---------contact--------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+           <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p>ngenosolomon712@gmail.com</p>
+                <p>+2545713727293</p>
+                <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+           </div>
+           <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Text" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+           </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2025 Ngeno Kipkirui Solomon. All rights reserved.</p>
+                    <ul class="footer-nav">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/soloo4040"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxizTEZeNDVqTEjUGoB8o2b4CtbQtOXAr0O4cpQFlvE-YNJg-GuEjHUVK6yOIFKY7o2LQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
